@@ -8,7 +8,7 @@ Fetches live earthquake data from the **USGS GeoJSON feed** and displays it on a
 ## Inspiration
 
 Inspired by **Google Crisis Response** and **NASA hackathon challenges**.  
-The aim was to create something **socially impactful** that could help communities visualise and respond to disaster data quickly — while also looking visually impressive in screenshots and demos.
+The aim was to create something **socially impactful** that could help communities visualise and respond to disaster data quickly while also looking visually impressive in screenshots and demos.
 
 ---
 
@@ -107,7 +107,7 @@ This project was originally conceived and developed during a fast-paced hackatho
 
 The aim was to create a tool that aggregates real-time disaster data including earthquakes, severe weather, and floods and presents it on an intuitive, map-based dashboard.
 
-The hackathon environment encouraged rapid ideation, quick prototyping, and a strong focus on real-world impact. Our goal was to design a lightweight, user-friendly application that communities, NGOs, and emergency services could use to monitor threats and make faster, data-driven decisions — all within a tight 48-hour timeframe.
+The hackathon environment encouraged rapid ideation, quick prototyping, and a strong focus on real-world impact. Our goal was to design a lightweight, user-friendly application that communities, NGOs, and emergency services could use to monitor threats and make faster, data-driven decisions all within a tight 48-hour timeframe.
 
 The result is a visually engaging, responsive application that not only looks impressive in screenshots but also demonstrates the power of combining open data with clean user interface design under challenging time constraints.
 
