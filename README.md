@@ -102,4 +102,14 @@ Crisis-Tracking-Tool/
 * GitHub: [@dancull](https://github.com/dancull)
 
 ## Hackathon Context
-Developed as part of a hackathon project inspired by Google Crisis Response and NASA hackathon challenges, aiming to make disaster data accessible, actionable, and visually compelling.
+
+This project was originally conceived and developed during a fast-paced hackathon inspired by large-scale disaster response initiatives such as Google Crisis Response and the NASA Space Apps Challenge.
+
+The aim was to create a tool that aggregates real-time disaster data — including earthquakes, severe weather, and floods — and presents it on an intuitive, map-based dashboard.
+
+The hackathon environment encouraged rapid ideation, quick prototyping, and a strong focus on real-world impact. Our goal was to design a lightweight, user-friendly application that communities, NGOs, and emergency services could use to monitor threats and make faster, data-driven decisions — all within a tight 48-hour timeframe.
+
+The result is a visually engaging, responsive application that not only looks impressive in screenshots but also demonstrates the power of combining open data with clean user interface design under challenging time constraints.
+
+
+
