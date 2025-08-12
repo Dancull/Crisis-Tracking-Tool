@@ -1,4 +1,4 @@
-# Crisis-Tracking-Tool
+# Crisis-Tracking-Tool: Real-Time Disaster Monitoring via Open Data and Interactive Mapping
 
 A web-based real-time disaster alert mapping tool built with HTML, CSS, and JavaScript using **Leaflet.js**.  
 Fetches live earthquake data from the **USGS GeoJSON feed** and displays it on an interactive **OpenStreetMap-based map** with full-screen view, dynamic popups, and automatic updates.
