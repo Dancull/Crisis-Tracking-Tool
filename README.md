@@ -60,7 +60,11 @@ Steps to Run:
 ---
 
 ## License
-This project is licensed under the MIT License. See LICENSE for full details.
+
+Including a LICENSE file clarifies how others may use, modify, and distribute your code. By choosing an open-source license such as MIT, you grant permission for use under defined terms while protecting your intellectual property and limiting liability.
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for full details.
+
 
 ---
 
