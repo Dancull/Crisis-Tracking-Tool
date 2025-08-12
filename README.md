@@ -81,6 +81,13 @@ Crisis-Tracking-Tool/
 
 ---
 
+## ScreenShots
+
+### Main Map View  
+![Map view showing live earthquake alerts](assets/map-example.png)
+
+---
+
 ## Roadmap
 * Add filtering by magnitude or time range
 * Implement offline caching for unstable connections
