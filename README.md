@@ -85,6 +85,7 @@ Crisis-Tracking-Tool/
 
 ### Main Map View  
 ![Map view showing live earthquake alerts](assets/map-example.png)
+<img src="assets/map-example.png" alt="Map screenshot" width="900">
 
 ---
 
