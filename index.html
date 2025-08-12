@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Disaster Alert Map</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="map"></div>
+  <!-- Filter Panel (single instance) -->
+  <div id="filter-panel" class="panel">
+    <h3>Filter Events</h3>
+    <label><input type="checkbox" id="filter-earthquakes" checked /> Live Earthquakes</label><br />
+    <label><input type="checkbox" id="filter-user" checked /> User-Reported Disasters</label><br />
+    <label><input type="checkbox" id="filter-mock" checked /> Mock Disasters</label><br />
+    <label><input type="checkbox" id="filter-storms" checked /> Tropical Storms</label><br />
+    <label><input type="checkbox" id="filter-gdacs" checked /> Global Disaster Alerts (GDACS)</label><br />
+    <label><input type="checkbox" id="filter-wildfires" checked /> Wildfires (NASA FIRMS)</label>
+  </div>
+  <!-- Report Disaster Button -->
+  <button id="report-btn">Report Disaster</button>
+  <!-- Modal -->
+  <div id="modal-bg" class="modal-bg">
+    <div class="modal">
+      <h2>Report a Disaster</h2>
+      <form id="report-form">
+        <label>Type:
+          <select id="disaster-type" required>
+            <option value="Earthquake">Earthquake</option>
+            <option value="Flood">Flood</option>
+            <option value="Fire">Fire</option>
+            <option value="Other">Other</option>
+          </select>
+        </label><br />
+        <label>Location Name:
+          <input type="text" id="location-name" required />
+        </label><br />
+        <label>Severity (1-5):
+          <input type="number" id="severity" min="1" max="5" required />
+        </label><br />
+        <button type="submit">Submit</button>
+        <button type="button" id="close-modal">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Collapsible Legend Box -->
+  <div id="legend-box" class="legend-box">
+    <div id="legend-header" class="legend-header">Legend <span id="legend-toggle">&#9660;</span></div>
+    <div id="legend-content" class="legend-content">
+  <div class="legend-row"><img src="https://cdn.jsdelivr.net/gh/pointhi/leaflet-color-markers@master/img/marker-icon-red.png" width="20" height="32"> Earthquake (Severe)</div>
+  <div class="legend-row"><img src="https://cdn.jsdelivr.net/gh/pointhi/leaflet-color-markers@master/img/marker-icon-orange.png" width="20" height="32"> Earthquake (Moderate) / Wildfire</div>
+  <div class="legend-row"><img src="https://cdn.jsdelivr.net/gh/pointhi/leaflet-color-markers@master/img/marker-icon-yellow.png" width="20" height="32"> Earthquake (Mild)</div>
+  <div class="legend-row"><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="22" height="22"> User-Reported</div>
+  <div class="legend-row"><img src="https://cdn-icons-png.flaticon.com/512/2930/2930016.png" width="22" height="22"> Flood</div>
+  <div class="legend-row"><img src="https://cdn.jsdelivr.net/gh/pointhi/leaflet-color-markers@master/img/marker-icon-blue.png" width="20" height="32"> GDACS / Global Disaster</div>
+  <div class="legend-row"><span class="legend-storm"></span> Tropical Storm</div>
+    </div>
+  </div>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Collapsible legend logic
+    const legendHeader = document.getElementById('legend-header');
+    const legendContent = document.getElementById('legend-content');
+    const legendToggle = document.getElementById('legend-toggle');
+    let legendOpen = true;
+    legendHeader.onclick = function() {
+      legendOpen = !legendOpen;
+      legendContent.style.display = legendOpen ? 'block' : 'none';
+      legendToggle.innerHTML = legendOpen ? '&#9660;' : '&#9654;';
+    };
+  </script>
+</body>
+</html>
