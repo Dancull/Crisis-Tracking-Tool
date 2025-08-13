@@ -59,6 +59,17 @@ Steps to Run:
 
 ---
 
+## Hackathon & Project Origin
+This project was inspired by initiatives such as Google Crisis Response and NASA hackathon challenges, aiming to create a socially impactful and visually impressive real-time disaster alert map within a rapid development timeframe.
+
+## MVP Features
+* Interactive map interface built with Leaflet.js (or Google Maps API).
+* Integration of live or mock disaster alert data, including earthquake and weather warning feeds.
+* Dynamic map pins displaying disaster locations with severity-based icons.
+* “Report Disaster” button allowing users to add local alerts (stored client-side, no backend).
+* Preloaded dramatic mock alerts to enhance demo realism.
+* Animated icons indicating urgency for enhanced visual impact.
+
 ## License
 
 Including a LICENSE file clarifies how others may use, modify, and distribute your code. By choosing an open-source license such as MIT, you grant permission for use under defined terms while protecting your intellectual property and limiting liability.
